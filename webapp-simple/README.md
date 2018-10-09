@@ -8,12 +8,8 @@
 
 ```
 npm install
-npm run watch-ts
 
-# In another terminal
-npm run watch-js
-npm run watch-node
-npm run copy-assets
+npm run watch
 ```
 
 # From Scratch

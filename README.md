@@ -27,6 +27,17 @@ Located in the `/webapp-simple`, there is an example application. This is a simp
 - Loggin integration
 - Error handler and example routes
 
+
+## Typescript library example
+
+Located in the `/library-example`, there is an example of a library that is transpiled for usage in the browser/node context using Babel 7 and the typescript compiler.
+
+### Features
+
+- Build system uses @babel/typescript for transpiling to browser safe javascript.
+- Typescript for compilation
+- Builds type definitions with the code.
+
 # Resources
 
 Stuff you might use to learn a bit more about typescript
