@@ -52,7 +52,7 @@ Located in  `/webpack-example`, there is an example application which builds cli
 4. Improved IDE support
 5. Promotes dependable and safe refactoring
 
-## Should we use it for everything?
+## Should I use it for everything?
 
 Hard to answer, at this stage you can use it safely across any javascript interpreter, but your milage may vary, and the technique you use to transpile/compile typescript may vary. At this stage you should definitly consider using typescript for frontend development, and the support for server side typescript is improving!
 
@@ -78,8 +78,6 @@ Depends on your background. For people with a background in a strongly typed lan
 - Different setup depending on server/client side deployments
 - Learning the whole language is hard.
 - Supports a lot of powerful and advanced type features, which makes choosing a pragmatic subset of the language hard. It is a langauge that is very easy to get fancy with, but your colleagues may not appreciate this when debugging code.
-
-
 
 ## What do you miss moving from typescript back to javascript?
 
@@ -111,4 +109,5 @@ Stuff you might use to learn a bit more about typescript
 - A comprehensive list of typescript language features. http://ladder.ts.training/
 - Learn typescript in Y minutes. https://learnxinyminutes.com/docs/typescript/ 
 - Good web application starting point https://github.com/Microsoft/TypeScript-Node-Starter/
+- Awesome stuff: static analysis https://github.com/SonarSource/SonarTS
 
