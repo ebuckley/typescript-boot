@@ -1,19 +1,13 @@
 
-# What this is?
+# What is this?
 
-A beginners Introduction and overview of typescript, including how it allows us to take advantage of object-oriented principles. At the end of the session, you will have a working knowledge of the typescript language.  A basic understanding of any programming language will be required.
+A knowledge base for getting an introduction and overview of typescript. Includes some sample projects for setting up typescript.
 
 Typescript is a superset of the javascript language, which aims to make the development of large applications more manageable. The language transpiles to javascript, and can run in any javascript environment
 
-**Learnings**
- - How to install/setup typescript
- - Benefits you get in vscode
- - An example project you can use at home to play with typescript
- - A very basic introduction to strongly typed languages & object oriented programming
-
 # Structure 
 
-This tutorial contains a number of example projects, check out the README.md in each folder to learn more.
+Each folder in this repo contains an example starting point, for bootstrapping an application with typescript.
 
 ## Simple express webapp
 
@@ -91,6 +85,7 @@ Depends on your background. For people with a background in a strongly typed lan
 
 - Jumping to class/interface definitions in the editor
 - Interfaces
+- Auto-fix editor support
 
 ## Why use Babel 7 for transpilation?
 
