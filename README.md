@@ -79,6 +79,7 @@ Depends on your background. For people with a background in a strongly typed lan
 
 ## What is difficult with typescript?
 
+- Project setup is "too hard"..
 - Transpiled javascript in a debugger is not as beautiful as sourcemapped esnext.
 - Different setup depending on server/client side deployments
 - Learning the whole language is hard.
@@ -90,6 +91,23 @@ Depends on your background. For people with a background in a strongly typed lan
 
 - Jumping to class/interface definitions in the editor
 - Interfaces
+
+## Why use Babel 7 for transpilation?
+
+More contorl of the emitted code is enabled by Babel 7, and you probably already want to use Babel for transpilation of any `.js` source code assets that already exist in your code base.
+Using Babel 7 is probably easier to setup than a full `tsc` centered build chain.
+
+There is some evidence that Babel 7 might be a lot faster at transpiling than the `tsc` tool.
+
+## Why not use Babel 7 for transpiling?
+
+Babel 7 does not support some language features:
+
+1. namespaces
+2. bracket style type-assertion/cast syntax regardless of when JSX is enabled (i.e. writing <Foo>x won’t work even in .ts files if JSX support is turned on, but you can instead write x as Foo).
+3. enums that span multiple declarations (i.e. enum merging)
+4. legacy-style import/export syntax (i.e. import foo = require(...) and export = foo)
+
 
 # Resources
 

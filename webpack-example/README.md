@@ -28,14 +28,79 @@ The following instructions detail how to setup this project from scratch.
 ```
 
 ## Add a tsconfig.json file
-Typescript needs to know what compiler rules to use for checking the types. Instead of emiting compiled javascript, we will instead use Babel7 for creation of browser safe javascript
+Typescript needs to know what compiler rules to use for checking the types. `noEmit` has been enabled so that we only use the `tsc` utility for type checking.
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs", 
+    "noEmit": true /* Stop tsc from emitting compiled code, we use Babel7 for compilation */
+  }
+}
+```
+
 
 ## Add a .babelrc file
 Babel 7 requires the following configuration for compiling code.
-
+```json
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "browsers": "last 2 versions"
+        },
+        "useBuiltIns": "usage",
+        "modules": false
+      }
+    ],
+    "@babel/typescript"
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread"
+  ]
+}
+```
 ## Create a webpack.config.js
 
-Webpack needs a configuration file to know what/where/how to bundle and build the typescript
+Webpack needs a configuration file to know what/where/how to bundle and build the typescript. The notable parts are configuration of rules for loading `js` or `ts` files.
+
+```js
+const path = require('path');
+
+module.exports = {
+  mode: 'development',
+  entry: './src/index',
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
+  },
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  resolve: {
+    extensions: ['.ts', '.js', '.json'],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.ts?$/,
+        loader: 'babel-loader',
+      },
+      {
+        test: /\.js$/,
+        use: ["source-map-loader"],
+        enforce: "pre"
+      }
+    ]
+  }
+};
+
+```
 
 ## Add npm scripts for building and serving
 Add the following run scripts to your `package.json`
