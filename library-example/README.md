@@ -20,7 +20,7 @@ Setup an npm package, and install the development dependencies.
 
 ```
 npm init
-npm install --save-dev typescript @babel/core @babel/cli @babel/preset-env @babel/preset-typescript 
+npm install --save-dev typescript @babel/core @babel/cli @babel/preset-env @babel/preset-typescript @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread
 ```
 
 ### Create your tsconfig.json

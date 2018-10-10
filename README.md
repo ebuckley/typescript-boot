@@ -38,6 +38,59 @@ Located in the `/library-example`, there is an example of a library that is tran
 - Typescript for compilation
 - Builds type definitions with the code.
 
+## Babel + webpack + typescript
+
+Located in  `/webpack-example`, there is an example application which builds client side javascript for a simple static site. We use Babel for building the javascript, tsc for typechecking, and webpack for bundling and running the development server.
+
+### Features
+- Webpack development server.
+- Minimal starting point for webpack development.
+- Babel integration.
+- Supports loading typescript and javascript and json using webpack loaders.
+
+# FAQ's
+
+## Why should we use typescript?
+
+1. Improves code readability
+2. Early detection of errors
+3. Easy code analysis
+4. Improved IDE support
+5. Promotes dependable and safe refactoring
+
+## Should we use it for everything?
+
+Hard to answer, at this stage you can use it safely across any javascript interpreter, but your milage may vary, and the technique you use to transpile/compile typescript may vary. At this stage you should definitly consider using typescript for frontend development, and the support for server side typescript is improving!
+
+
+## Why should I use typescript instead of flowtype?
+
+- Typescript is winning the populatrity contest
+- Many third party libraries are exposing `.d.ts` files.
+
+## Why should I learn typescript?
+
+Depends on your background. For people with a background in a strongly typed language, learning typescript will allow you to bring over a lot of your regular OOP thinking to the client side, yet introduce you to the javascript syntax and runtime. For beginners in typed languages, it is a good way to dip your feet in to the world of strong typing. For seasoned javascript developers, it will allow you to create API's that provide rich auto-complete. Additionally, everyone can benifit from learning new languages and development paradigms.
+
+## How does typescript integrate with my browser/editor/debugger?
+
+- Editor support is generally good.
+- For Vscode: you get great auto-complete, and you can use the `.d.ts` definitions from libraries even when writing plain old JS, so typescript as a industry practice has been providing value even when using plain old javascript
+
+## What is difficult with typescript?
+
+- Transpiled javascript in a debugger is not as beautiful as sourcemapped esnext.
+- Different setup depending on server/client side deployments
+- Learning the whole language is hard.
+- Supports a lot of powerful and advanced type features, which makes choosing a pragmatic subset of the language hard. It is a langauge that is very easy to get fancy with, but your colleagues may not appreciate this when debugging code.
+
+
+
+## What do you miss moving from typescript back to javascript?
+
+- Jumping to class/interface definitions in the editor
+- Interfaces
+
 # Resources
 
 Stuff you might use to learn a bit more about typescript
