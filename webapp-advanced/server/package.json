@@ -1,0 +1,32 @@
+{
+  "name": "fullstack-webapp-example",
+  "version": "1.0.0",
+  "description": "A fullstack webapp example using express typescript webpack",
+  "main": "dist/server.ts",
+  "scripts": {
+    "build-ts": "tsc",
+    "start": "npm run serve",
+    "server": "node dist/server.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,green.bold, cyan.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
+    "watch-node": "nodemon dist/server.js",
+    "watch-ts": "tsc -w"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "webpack",
+    "webapp"
+  ],
+  "author": "Ersin Buckley",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "winston": "^3.1.0"
+  }
+}
