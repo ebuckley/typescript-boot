@@ -7,6 +7,9 @@ function component() {
       <li>Typescript</li>
       <li>Webpack</li>
     </ol>
+
+    <h2> WHile you're here.</h2>
+    <marquee scrollamount="1">Let the good time rolls feind...</marquee>
   `
   return element;
 }

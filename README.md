@@ -11,7 +11,7 @@ Each folder in this repo contains an example starting point, for bootstrapping a
 
 ## Simple express webapp
 
-Located in the `/webapp-simple`, there is an example application. This is a simple webapp that uses typescript and express.js .
+Located in the [/webapp-simple](/webapp-simple/README.md), there is an example application. This is a simple webapp that uses typescript and express.js .
 
 ### Features
 
@@ -24,7 +24,7 @@ Located in the `/webapp-simple`, there is an example application. This is a simp
 
 ## Typescript library example
 
-Located in the `/library-example`, there is an example of a library that is transpiled for usage in the browser/node context using Babel 7 and the typescript compiler.
+Located in [/library-example](/library-example/README.md)`, there is an example of a library that is transpiled for usage in the browser/node context using Babel 7 and the typescript compiler.
 
 ### Features
 
@@ -35,7 +35,7 @@ Located in the `/library-example`, there is an example of a library that is tran
 ## Babel + webpack + typescript
 
 
-Located in  [/webpack-example](/webpack-example/README.md), there is an example application which builds client side javascript for a simple static site. We use Babel for building the javascript, tsc for typechecking, and webpack for bundling and running the development server.
+Located in [/webpack-example](/webpack-example/README.md), there is an example application which builds client side javascript for a simple static site. We use Babel for building the javascript, tsc for typechecking, and webpack for bundling and running the development server.
 
 ### Features
 - Webpack development server.
