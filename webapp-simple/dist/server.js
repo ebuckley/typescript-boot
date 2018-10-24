@@ -17,6 +17,6 @@ app.get("/", (req, res) => res.render("index", { title: "hello world!" }));
 // error handler
 app.use(error_1.default);
 app.listen(3000, () => {
-    logger_1.default.info("Starting a typescript applicaiton on port 3000");
+    logger_1.default.info("Boom-shaka-laka a Running applicaiton is on port 3000");
 });
 //# sourceMappingURL=server.js.map

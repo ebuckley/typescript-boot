@@ -22,5 +22,5 @@ app.get("/", (req, res) => res.render("index", { title: "hello world!" }));
 app.use(error);
 
 app.listen(3000, () => {
-  log.info("Starting a typescript applicaiton on port 3000");
+  log.info("Boom-shaka-laka a Running applicaiton is on port 3000");
 });
