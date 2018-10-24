@@ -34,7 +34,8 @@ Located in the `/library-example`, there is an example of a library that is tran
 
 ## Babel + webpack + typescript
 
-Located in  `/webpack-example`, there is an example application which builds client side javascript for a simple static site. We use Babel for building the javascript, tsc for typechecking, and webpack for bundling and running the development server.
+
+Located in  [/webpack-example](/webpack-example/README.md), there is an example application which builds client side javascript for a simple static site. We use Babel for building the javascript, tsc for typechecking, and webpack for bundling and running the development server.
 
 ### Features
 - Webpack development server.
@@ -110,4 +111,5 @@ Stuff you might use to learn a bit more about typescript
 - Learn typescript in Y minutes. https://learnxinyminutes.com/docs/typescript/ 
 - Good web application starting point https://github.com/Microsoft/TypeScript-Node-Starter/
 - Awesome stuff: static analysis https://github.com/SonarSource/SonarTS
+
 
